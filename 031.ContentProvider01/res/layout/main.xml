@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeaa"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.andrew31.contentprovider01.MainActivity" >
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"  
+        android:background="#eeffee"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/insert"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="insert" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="delete" />
+    	<Button
+	        android:id="@+id/update"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="update"
+	         />        
+    	<Button
+	        android:id="@+id/query"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="query"
+	         />  
+    	<Button
+	        android:id="@+id/querys"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="反向query"
+	         />  	                 
+    </LinearLayout>
+
+    
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+   		android:background="#0000ee" 
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >    
+
+    <!-- 用一个帧布局来占一个位置，目的是给fragment用 -->
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>        
+
+	</LinearLayout>
+
+</RelativeLayout>

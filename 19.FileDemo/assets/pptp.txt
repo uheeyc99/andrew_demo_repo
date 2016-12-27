@@ -1,0 +1,19 @@
+pty "pptp qycam.com --nolaunchpppd"
+lock
+#noauth
+nodetach
+debug
+lock
+noauth
+user chenlin
+password chenlin
+nobsdcomp
+nodeflate
+defaultroute
+ipparam vpn_bbbj
+require-mppe-128
+refuse-pap
+refuse-chap
+refuse-eap
+refuse-mschap
+lcp-echo-interval 36
